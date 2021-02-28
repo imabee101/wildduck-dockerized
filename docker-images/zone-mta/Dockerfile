@@ -1,4 +1,4 @@
-FROM node:lts-alpine as builder
+FROM arm64v8/node:lts-alpine as builder
 
 ARG version=2.4.2
 
@@ -13,7 +13,7 @@ RUN npm install --production
 RUN npm install zonemta-wildduck
 
 
-FROM node:lts-alpine as app
+FROM arm64v8/node:lts-alpine as app
 
 ENV NODE_ENV production
 
