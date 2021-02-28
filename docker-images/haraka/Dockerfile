@@ -1,4 +1,4 @@
-FROM node:lts-alpine as builder
+FROM arm64v8/node:lts-alpine as builder
 
 ARG version=2.8.27
 ARG plugin_version=1.29.9
@@ -12,7 +12,7 @@ RUN npm install --production
 RUN npm install haraka-plugin-wildduck@${plugin_version}
 
 
-FROM node:lts-alpine as app
+FROM arm64v8/node:lts-alpine as app
 
 ENV NODE_ENV production
 
