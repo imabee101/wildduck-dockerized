@@ -1,4 +1,4 @@
-# Wildduck: dockerized - 🦆+🐋=❤
+# Wildduck: dockerized for arm64v8 - 🦆+🐋=❤
 This will set up:
 
 | Service          | Why                                                       | 
